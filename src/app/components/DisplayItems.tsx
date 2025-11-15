@@ -50,7 +50,7 @@ export default function DisplayItems() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6 },
     },
   }
 
@@ -68,7 +68,7 @@ export default function DisplayItems() {
           {products.map((product) => (
             <motion.div
               key={product.id}
-            variants={itemVariants}
+              variants={itemVariants}
               onMouseEnter={() => setHoveredId(product.id)}
               onMouseLeave={() => setHoveredId(null)}
               className="flex flex-col group"
