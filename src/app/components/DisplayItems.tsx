@@ -86,9 +86,9 @@ export default function DisplayItems() {
                 {/* Overlay Label */}
                 <motion.div
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: hoveredId === product.id ? 0.7 : 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute inset-0 bg-black"
+                  animate={{ opacity: hoveredId === product.id ? 1 : 0 }}
+                  transition={{ duration: 0.25 }}
+                  className="absolute inset-0 bg-black/20 pointer-events-none"
                 />
 
                 {/* Label Text */}
@@ -116,13 +116,13 @@ export default function DisplayItems() {
                   </p>
                 </div>
 
-                {/* Buy Button */}
+
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-3 px-4 border-2 border-gray-900 text-gray-900 font-semibold text-sm rounded-lg hover:bg-gray-900 hover:text-white transition-colors duration-300"
+                  className="w-full py-3 px-4 border-2 border-gray-900 text-gray-900 font-semibold text-sm rounded-lg hover:bg-gray-900 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
-                  Buy
+                  GET YOURS
                 </motion.button>
               </div>
             </motion.div>
