@@ -49,7 +49,7 @@ const images = [
   "dress/dress12.jpg",
 ]
 
-const Skiper30 = () => {
+const PicGallery = () => {
   const gallery = useRef<HTMLDivElement>(null)
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
@@ -173,4 +173,4 @@ const Column = ({ images, y }: ColumnProps) => {
   )
 }
 
-export { Skiper30 }
+export { PicGallery }
