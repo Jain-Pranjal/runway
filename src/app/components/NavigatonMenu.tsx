@@ -73,7 +73,7 @@ export default function NavigationMenu() {
         { name: 'Fall Winter 25-26', href: '#' },
         { name: 'Outlet', href: '#' },
         { name: 'About', href: '#' },
-        { name: 'Adv Campaign', href: '#' },
+        { name: 'Growth', href: '#' },
         { name: 'Contact', href: '#' },
     ]
 
@@ -103,8 +103,12 @@ export default function NavigationMenu() {
 
                     {/* Middle Section - Campaign Info */}
                     <div className="hidden md:flex items-center gap-6 text-xs md:text-sm">
-                        <span>Fall Winter 25-26</span>
-                        <span>Outlet</span>
+                        <Link href="#">
+                        <span className='hover:opacity-80 transition-opacity'>Fall Winter 25-26</span>
+                        </Link>
+                        <Link href="#">
+                        <span className='hover:opacity-80 transition-opacity'>Outlet</span>
+                        </Link>
                     </div>
 
                     {/* Right Section - User Links */}
@@ -147,8 +151,12 @@ export default function NavigationMenu() {
                                     RUNWAY
                                 </Link>
                                 <div className="hidden md:flex items-center gap-6 text-xs md:text-sm ml-6">
+                                    <Link href="#">
                                     <span>Fall Winter 25-26</span>
+                                    </Link>
+                                    <Link href="#">
                                     <span>Outlet</span>
+                                    </Link>
                                 </div>
                             </div>
 
