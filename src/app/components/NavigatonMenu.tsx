@@ -74,7 +74,7 @@ export default function NavigationMenu() {
         { name: 'Outlet', href: '#' },
         { name: 'About', href: '#' },
         { name: 'Growth', href: '#' },
-        { name: 'Contact', href: '#' },
+        { name: 'Contact', href: '/contact' },
     ]
 
     return (

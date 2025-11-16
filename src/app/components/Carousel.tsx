@@ -71,7 +71,7 @@ const PicCarousel = () => {
 
   return (
     <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#eee]">
-      <Carousel className="" images={images} showPagination loop autoplay />
+      <Carousel className="" images={images} showPagination loop  />
     </div>
   );
 };
