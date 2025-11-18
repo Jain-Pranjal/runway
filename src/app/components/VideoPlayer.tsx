@@ -172,7 +172,7 @@ export const Skiper67 = () => {
           loop
           className="h-full w-full object-cover"
         >
-          <source src="/showreel/skiper-ui-showreel.mp4" />
+          <source src="/runwayVideo.mp4" />
         </video>
       </div>
     </section>
