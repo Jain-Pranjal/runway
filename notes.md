@@ -43,3 +43,11 @@ to sort the classes add the plugins": ["prettier-plugin-tailwindcss"] in .pretti
     "plugins": ["prettier-plugin-tailwindcss"]
 }
 ```
+
+## to commit-msg
+
+```
+pnpm add -D @commitlint/cli @commitlint/config-conventional
+
+and then make the commitlint.config.cjs
+```
