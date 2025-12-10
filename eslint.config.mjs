@@ -1,3 +1,5 @@
+// Here we will define all the linting rules for the project
+
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
@@ -13,9 +15,16 @@ export default defineConfig([
       "simple-import-sort": simpleImportSort,
     },
     rules: {
+      // Strict import correctness (like flake8)
+      "import/no-unresolved": "error",
+      "import/no-duplicates": "error",
+      "import/order": "off", // we disable default import-order
+      "no-unused-vars": "error",
+
+      // Your import sorting plugin
       "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
-    },
+      "simple-import-sort/exports": "error"
+    }
   },
 
   globalIgnores([
@@ -25,3 +34,4 @@ export default defineConfig([
     "next-env.d.ts",
   ]),
 ]);
+
